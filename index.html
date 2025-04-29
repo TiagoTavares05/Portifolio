@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Tiago Tavares | Portfólio</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="./img/tiago.jpeg" alt="Foto de Tiago Tavares" class="foto-perfil">
+            <h1>Tiago Tavares</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Back End</p>
+        </div>
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Atualmente como estagiário na Gentrop, tenho forte atuação em desenvolvimento de software, complementada
+                por cursos extracurriculares. Inglês avançado, o que facilita a comunicação
+                com equipes internacionais e o acesso a literatura técnica especializada. Habilidade comprovada em
+                trabalho colaborativo, adaptabilidade e comunicação assertiva.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <div class="projetos-conteudo">
+                    <a href="https://github.com/TiagoTavares05/Python/tree/main/pokweather" target="_blank" rel="noopener noreferrer">
+                        <img src="img/pok.png" alt="Projeto 1" class="projetos-imagem">
+                        <div class="caixa-texto-projetos">
+                            <h3 class="info-projetos">PokeWeather</h3>
+                    </a>
+                    <p class="paragrafo-projetos">"Em desenvolvimento" Tipos de Pokémon Baseados no Clima</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projetos-card">
+            <div class="projetos-conteudo">
+                <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer">
+                    <img src="img/show.jpg" alt="Projeto 2" class="projetos-imagem">
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">ShowTracker</h3>
+                </a>
+                <p class="paragrafo-projetos">"Em desenvolvimento" O ShowTracker é uma aplicação que permite ao
+                    usuário registrar todos os shows que já assistiu, armazenando detalhes importantes de cada
+                    evento e gerando insights e estatísticas a partir desses dados.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="projetos-card">
+            <div class="projetos-conteudo">
+                <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer">
+                    <img src="img/spo.jpg" alt="Projeto 3" class="projetos-imagem">
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">Spotify App</h3>
+                </a>
+                <p class="paragrafo-projetos">"Projeto Futuro" é uma aplicação web que consome a Spotify Web API</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        <section id="contatos" class="contatos">
+            <h2 class="contatos-titulo">Entre em Contato</h2>
+
+            <form class="formulario-contato" id="formulario">
+
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome">
+                </div>
+
+                <div class="grupo-form">
+                    <textarea placeholder="Digite sua Mensagem" class="campo-form" rows="6" id="mensagem"></textarea>
+                </div>
+
+                <button class="botao-form" id="btnWhats">Enviar WhatsApp</button>
+
+            </form>
+        </section>
+
+    </section>
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
