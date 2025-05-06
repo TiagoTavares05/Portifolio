@@ -124,6 +124,37 @@ h1{
     font-size: 1.2rem;
 }
 
+.habilidade-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1rem;
+    max-width: 600px; 
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.habilidade-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidade-imagem {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    padding: 10px; 
+}
 
 .projetos-caixa{
     display: grid;
@@ -144,6 +175,7 @@ h1{
     cursor: pointer;
 }
 
+
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(255, 40, 50, 0.8);
     transform: translateY(-10px) scale(1.03);
@@ -156,7 +188,7 @@ h1{
     color: white; /* ou a cor que você quiser */
 }
 
-.projetos-titulo{
+.projetos-titulo, .habilidade-titulo{
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
