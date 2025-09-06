@@ -365,25 +365,41 @@ a{
 }
 
 @media (max-width: 1020px){
-     .menu li:last-child { /* Seleciona o último item da lista (Contatos) */
+     .navegacao {
+        /* Aumenta a altura da barra de navegação para mobile */
+        min-height: 100px;
+        padding: 1rem 0; /* Padding superior e inferior para os itens */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-link {
+        /* Garante que o link ocupe a largura completa */
+        display: block;
+        text-align: center;
+        padding: 0.8rem 0; /* Aumenta o padding para melhor toque */
+    }
+
+    .menu li:last-child {
         display: none;
     }
-    .navegacao{
-       display: flex;
-    }
-    .menu {
-        align-items: center;
-        gap: 0.5rem;
-      }
 
-    .cabecalho{
+    .cabecalho {
         flex-direction: column;
         align-items: center;
         text-align: center;
-      }
-    
+    }
+
     .foto-perfil {
         width: 70%;
         height: 70%;
-      }
+    }
 }
