@@ -3,623 +3,686 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#16070a">
     <meta name="description" content="Portfólio de Tiago Freitas dos Santos Tavares — Desenvolvedor de IA | AI Engineer certificado pelo Google Cloud (Generative AI Leader & Gemini Enterprise Specialist). Especialista em Python, Google ADK, Agent Platform, MCP, RAG e GCP.">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Tiago Tavares | Desenvolvedor de IA &amp; AI Engineer — Google Cloud Certified</title>
+    <!-- Gerado por `npm run bundle` a partir de js/app.js (não editar à mão). -->
+    <script src="js/app.bundle.js" defer></script>
 </head>
 
 <body data-ambient="red">
 
     <!-- Fundo Neural & Luz Ambiente Dinâmica -->
-    <div class="particulas" id="particulas"></div>
-    <div class="grid-neural"></div>
+    <div class="particulas" aria-hidden="true"></div>
+    <div class="grid-neural" aria-hidden="true"></div>
 
     <!-- Navegação -->
-    <nav class="navegacao">
+    <nav class="navegacao" aria-label="Menu principal">
         <div class="nav-container">
-            <a href="#inicio" class="nav-brand">
-                Tiago <span class="brand-accent">Tavares</span>
-            </a>
-            <ul class="menu">
-                <li><a href="#inicio" class="menu-link">Início</a></li>
-                <li><a href="#sobre" class="menu-link">Sobre</a></li>
-                <li><a href="#certificacoes" class="menu-link">Certificações</a></li>
-                <li><a href="#exp" class="menu-link">Carreira</a></li>
-                <li><a href="#habilidade" class="menu-link">Stack</a></li>
-                <li><a href="#projetos" class="menu-link">Projetos</a></li>
-                <li><a href="#contatos" class="menu-link">Contato</a></li>
+            <a href="#inicio" class="nav-brand">Tiago Tavares</a>
+            <ul class="menu" id="menu-principal">
+                <li><a href="#inicio" class="menu-link" data-i18n="nav.home">Início</a></li>
+                <li><a href="#sobre" class="menu-link" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#certificacoes" class="menu-link" data-i18n="nav.certs">Certificações</a></li>
+                <li><a href="#exp" class="menu-link" data-i18n="nav.career">Carreira</a></li>
+                <li><a href="#habilidade" class="menu-link" data-i18n="nav.stack">Stack</a></li>
+                <li><a href="#projetos" class="menu-link" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#contatos" class="menu-link" data-i18n="nav.contact">Contato</a></li>
             </ul>
+            <div class="nav-actions">
+                <button type="button" class="lang-switch" hidden aria-label="Idioma: português. Mudar para inglês">
+                    <span data-lang="pt" class="is-active">PT</span>
+                    <span data-lang="en">EN</span>
+                </button>
+                <button type="button" class="nav-toggle" hidden aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- HERO / INÍCIO -->
-    <main id="inicio" class="cabecalho">
-        <div class="hero-content">
-            <div class="hero-badges">
-                <a href="#certificacoes" class="status-pill red-pill">
-                    <span class="pulse-dot"></span>
-                    Google Cloud Certified: Generative AI Leader
-                </a>
-                <a href="#certificacoes" class="status-pill crimson-pill">
-                    ✦ 2x Gemini Enterprise Partner Specialist
-                </a>
-            </div>
-
-            <div class="perfil-wrapper">
-                <div class="orbit-ring"></div>
-                <img src="./img/tiago.jpeg" alt="Foto de Tiago Tavares" class="foto-perfil">
-                <a href="#certificacoes" title="Google Cloud Certified — Generative AI Leader">
-                    <img src="./img/cert-genai-leader.png" alt="Selo Google Cloud Generative AI Leader" class="hero-cert-seal">
-                </a>
-            </div>
-
-            <h1>Tiago Tavares</h1>
-            <p class="cabecalho-sub-titulo">
-                <span class="role-prefix">Desenvolvedor de IA //</span>
-                <span id="typewriter" class="typewriter-text">Agentes Autônomos com Google ADK &amp; Gemini Enterprise</span>
-            </p>
-            <p class="hero-bio">
-                Arquitetando e orquestrando agentes de Inteligência Artificial em <strong>Python</strong> no <strong>Google Cloud Platform</strong> (ADK, Agent Platform, Gemini Enterprise, servidores <strong>MCP</strong>, <strong>RAG</strong> e <strong>BigQuery</strong>).
-            </p>
-
-            <div class="hero-actions">
-                <a href="#projetos" class="btn-primary">Explorar Projetos</a>
-                <a href="cv/Tiago_Tavares_CV_PT.pdf" target="_blank" class="btn-outline">📄 Currículo (PT-BR)</a>
-                <a href="cv/Tiago_Tavares_Resume_EN.pdf" target="_blank" class="btn-outline">🌐 Resume (EN)</a>
-            </div>
-
-            <div class="hero-socials">
-                <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer" class="social-chip">
-                    <span>GitHub</span> ↗
-                </a>
-                <a href="https://www.linkedin.com/in/tiagofreitastavares" target="_blank" rel="noopener noreferrer" class="social-chip">
-                    <span>LinkedIn</span> ↗
-                </a>
-                <a href="mailto:tiagofreitastavares@gmail.com" class="social-chip">
-                    <span>tiagofreitastavares@gmail.com</span>
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <!-- SOBRE MIM -->
-    <section id="sobre" class="sobre">
-        <div class="section-header">
-            <span class="section-tag">// PERFIL &amp; TRAJETÓRIA</span>
-            <h2 class="secao-titulo">Sobre Mim</h2>
-        </div>
-
-        <div class="sobre-caixa">
-            <h3 class="sobre-subtitulo">Desenvolvedor de IA &amp; Arquitetura de Agentes no Google Cloud</h3>
-            <p class="sobre-paragrafo">
-                Sou <strong>Desenvolvedor de IA</strong> na <strong>Gentrop</strong> e graduando em Sistemas de Informação pela UNISANTA, certificado oficialmente pelo Google Cloud como <strong>Generative AI Leader</strong> e <strong>Partner Specialist em Gemini Enterprise (Agent Development &amp; Deployment)</strong>.
-            </p>
-            <p class="sobre-paragrafo">
-                No meu dia a dia, projeto e desenvolvo sistemas multi-agentes em <strong>Python</strong> utilizando <strong>Google ADK (Agent Development Kit)</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>. Construo servidores <strong>MCP (Model Context Protocol)</strong> customizados, fluxos de <strong>RAG</strong>, integrações com <strong>APIs REST e SQL (BigQuery)</strong>, além de deploys serverless no GCP (<strong>Cloud Run, Cloud Scheduler, Secret Manager</strong>) e interfaces web com <strong>TypeScript, HTML e CSS</strong>.
-            </p>
-            <div class="metricas-carreira">
-                <div class="metrica-item">
-                    <span class="metrica-valor">3x</span>
-                    <span class="metrica-label">Credenciais Google Cloud &amp; Gemini</span>
+    <main>
+        <!-- HERO / INÍCIO -->
+        <header id="inicio" class="cabecalho">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <a href="#certificacoes" class="status-pill red-pill">
+                        <span class="pulse-dot"></span>
+                        Google Cloud Certified: Generative AI Leader
+                    </a>
+                    <a href="#certificacoes" class="status-pill crimson-pill">
+                        ✦ 2x Gemini Enterprise Partner Specialist
+                    </a>
                 </div>
-                <div class="metrica-item">
-                    <span class="metrica-valor">ADK + MCP</span>
-                    <span class="metrica-label">Orquestração de Agentes em Produção</span>
+
+                <div class="perfil-wrapper">
+                    <div class="orbit-ring"></div>
+                    <img src="./img/tiago.jpeg" width="328" height="328" alt="Foto de Tiago Tavares" class="foto-perfil" data-i18n-attr="alt:hero.photoAlt">
+                    <a href="#certificacoes" class="hero-cert-link" title="Google Cloud Certified — Generative AI Leader" data-i18n-attr="title:hero.sealTitle">
+                        <img src="./img/cert-genai-leader.png" width="600" height="600" alt="Selo Google Cloud Generative AI Leader" class="hero-cert-seal" data-i18n-attr="alt:hero.sealAlt">
+                    </a>
                 </div>
-                <div class="metrica-item">
-                    <span class="metrica-valor">EN / PT</span>
-                    <span class="metrica-label">Inglês Avançado &amp; Vivência Bilíngue</span>
+
+                <h1>Tiago Tavares</h1>
+                <p class="cabecalho-sub-titulo">
+                    <span class="role-prefix" data-i18n="hero.rolePrefix">Desenvolvedor de IA //</span>
+                    <span id="typewriter" class="typewriter-text">Agentes Autônomos com Google ADK &amp; Gemini Enterprise</span>
+                </p>
+                <p class="hero-bio" data-i18n-html="hero.bio">
+                    Arquitetando e orquestrando agentes de Inteligência Artificial em <strong>Python</strong> no <strong>Google Cloud Platform</strong> (ADK, Agent Platform, Gemini Enterprise, servidores <strong>MCP</strong>, <strong>RAG</strong> e <strong>BigQuery</strong>).
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn-primary" data-i18n="hero.ctaProjects">Explorar Projetos</a>
+                    <a href="cv/Tiago_Tavares_CV_PT.pdf" target="_blank" rel="noopener" class="btn-outline" data-i18n="hero.ctaCvPt">📄 Currículo (PT-BR)</a>
+                    <a href="cv/Tiago_Tavares_Resume_EN.pdf" target="_blank" rel="noopener" class="btn-outline" data-i18n="hero.ctaCvEn">🌐 Resume (EN)</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer" class="social-chip">
+                        <span>GitHub</span> ↗
+                    </a>
+                    <a href="https://www.linkedin.com/in/tiagofreitastavares" target="_blank" rel="noopener noreferrer" class="social-chip">
+                        <span>LinkedIn</span> ↗
+                    </a>
+                    <a href="mailto:tiagofreitastavares@gmail.com" class="social-chip">
+                        <span>tiagofreitastavares@gmail.com</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- CERTIFICAÇÕES GOOGLE CLOUD -->
-    <section id="certificacoes" class="certificacoes">
-        <div class="section-header">
-            <span class="section-tag">// CREDENCIAIS OFICIAIS VERIFICADAS</span>
-            <h2 class="secao-titulo">Certificações Google Cloud</h2>
-            <p class="secao-subtitulo">Reconhecimento oficial em IA Generativa, Arquitetura de Agentes e Implantação Corporativa</p>
-        </div>
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="sobre">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about.tag">// PERFIL &amp; TRAJETÓRIA</span>
+                <h2 class="secao-titulo" data-i18n="about.title">Sobre Mim</h2>
+            </div>
 
-        <div class="cert-showcase">
-            <!-- Card Principal: Generative AI Leader -->
-            <div class="cert-card cert-featured" data-theme-hover="red">
-                <div class="red-top-bar"></div>
-                <div class="cert-featured-grid">
-                    <div class="cert-badge-wrap">
-                        <img src="img/cert-genai-leader.png" alt="Google Cloud Certified Generative AI Leader" class="cert-badge-img">
+            <div class="sobre-caixa">
+                <h3 class="sobre-subtitulo" data-i18n="about.subtitle">Desenvolvedor de IA &amp; Arquitetura de Agentes no Google Cloud</h3>
+                <p class="sobre-paragrafo" data-i18n-html="about.p1">
+                    Sou <strong>Desenvolvedor de IA</strong> na <strong>Gentrop</strong> e graduando em Sistemas de Informação pela UNISANTA, certificado oficialmente pelo Google Cloud como <strong>Generative AI Leader</strong> e <strong>Partner Specialist em Gemini Enterprise (Agent Development &amp; Deployment)</strong>.
+                </p>
+                <p class="sobre-paragrafo" data-i18n-html="about.p2">
+                    No meu dia a dia, projeto e desenvolvo sistemas multi-agentes em <strong>Python</strong> utilizando <strong>Google ADK (Agent Development Kit)</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>. Construo servidores <strong>MCP (Model Context Protocol)</strong> customizados, fluxos de <strong>RAG</strong>, integrações com <strong>APIs REST e SQL (BigQuery)</strong>, além de deploys serverless no GCP (<strong>Cloud Run, Cloud Scheduler, Secret Manager</strong>) e interfaces web com <strong>TypeScript, HTML e CSS</strong>.
+                </p>
+                <div class="metricas-carreira">
+                    <div class="metrica-item">
+                        <span class="metrica-valor">3x</span>
+                        <span class="metrica-label" data-i18n="about.metric1">Credenciais Google Cloud &amp; Gemini</span>
                     </div>
-                    <div class="cert-details">
-                        <div class="cert-Tag-row">
-                            <span class="cert-pill-official">GOOGLE CLOUD CERTIFIED</span>
-                            <span class="cert-validity">Válido: Nov 2026 – Nov 2029</span>
+                    <div class="metrica-item">
+                        <span class="metrica-valor">ADK + MCP</span>
+                        <span class="metrica-label" data-i18n="about.metric2">Orquestração de Agentes em Produção</span>
+                    </div>
+                    <div class="metrica-item">
+                        <span class="metrica-valor">EN / PT</span>
+                        <span class="metrica-label" data-i18n="about.metric3">Inglês Avançado &amp; Vivência Bilíngue</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICAÇÕES GOOGLE CLOUD -->
+        <section id="certificacoes" class="certificacoes">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="certs.tag">// CREDENCIAIS OFICIAIS VERIFICADAS</span>
+                <h2 class="secao-titulo" data-i18n="certs.title">Certificações Google Cloud</h2>
+                <p class="secao-subtitulo" data-i18n="certs.subtitle">Reconhecimento oficial em IA Generativa, Arquitetura de Agentes e Implantação Corporativa</p>
+            </div>
+
+            <div class="cert-showcase">
+                <!-- Card Principal: Generative AI Leader -->
+                <div class="cert-card cert-featured" data-theme-hover="red">
+                    <div class="red-top-bar"></div>
+                    <div class="cert-featured-grid">
+                        <div class="cert-badge-wrap">
+                            <img src="img/cert-genai-leader.png" width="600" height="600" loading="lazy" alt="Google Cloud Certified Generative AI Leader" class="cert-badge-img">
                         </div>
-                        <h3 class="cert-name">Generative AI Leader</h3>
-                        <p class="cert-desc">
-                            Certificação oficial do Google Cloud que comprova domínio em soluções de Inteligência Artificial Generativa, modelos fundacionais Gemini, arquitetura de agentes corporativos, RAG, governança e transformação de processos de negócios no GCP.
+                        <div class="cert-details">
+                            <div class="cert-Tag-row">
+                                <span class="cert-pill-official">GOOGLE CLOUD CERTIFIED</span>
+                                <span class="cert-validity" data-i18n="certs.validity">Válido: Nov 2026 – Nov 2029</span>
+                            </div>
+                            <h3 class="cert-name">Generative AI Leader</h3>
+                            <p class="cert-desc" data-i18n="certs.leaderDesc">
+                                Certificação oficial do Google Cloud que comprova domínio em soluções de Inteligência Artificial Generativa, modelos fundacionais Gemini, arquitetura de agentes corporativos, RAG, governança e transformação de processos de negócios no GCP.
+                            </p>
+                            <div class="cert-metadata">
+                                <span><strong>Series ID:</strong> 85470</span>
+                                <span><strong>Credential ID:</strong> af92810bd7154c9791ea31c3681d51f7</span>
+                            </div>
+                            <div class="cert-actions">
+                                <button type="button" class="btn-cert-modal" aria-haspopup="dialog" aria-controls="certModal"
+                                    data-cert-open
+                                    data-cert-src="img/certificado-oficial-google.png"
+                                    data-cert-width="1052" data-cert-height="814"
+                                    data-cert-title="Google Cloud Certified — Generative AI Leader"
+                                    data-cert-meta="Credential ID: af92810bd7154c9791ea31c3681d51f7"
+                                    data-cert-alt="Diploma Oficial Google Cloud Generative AI Leader - Tiago Tavares"
+                                    data-i18n-attr="data-cert-alt:certs.diplomaAlt">
+                                    <span data-i18n="certs.viewDiploma">🔍 Visualizar Diploma Oficial</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Partner Specialist -->
+                <div class="cert-specialists-grid">
+                    <div class="cert-card cert-specialist" data-theme-hover="red">
+                        <img src="img/cert-gemini-agent-dev.png" width="345" height="345" loading="lazy" alt="Certified Partner Specialist - Gemini Enterprise Agent Development" class="specialist-img">
+                        <div class="specialist-info">
+                            <div class="cert-Tag-row">
+                                <span class="specialist-tag">CERTIFIED PARTNER SPECIALIST</span>
+                                <span class="cert-validity" data-i18n="certs.agentDevValidity">Válido: Out 2026 – Abr 2027</span>
+                            </div>
+                            <h4>Gemini Enterprise Agent Development</h4>
+                            <p data-i18n="certs.agentDevDesc">Especialização técnica oficial no desenvolvimento e orquestração de agentes corporativos com Google ADK, Agent Platform e Gemini Enterprise.</p>
+                            <div class="cert-metadata">
+                                <span><strong>Issued by:</strong> Google Cloud</span>
+                                <span><strong>Credly:</strong> mOVCBr56</span>
+                            </div>
+                            <div class="cert-actions">
+                                <button type="button" class="btn-cert-modal" aria-haspopup="dialog" aria-controls="certModal"
+                                    data-cert-open
+                                    data-cert-src="img/certificado-ge-agent-development.png"
+                                    data-cert-width="1100" data-cert-height="850"
+                                    data-cert-title="Certified Partner Specialist — Gemini Enterprise Agent Development"
+                                    data-cert-meta="Credly: mOVCBr56"
+                                    data-cert-verify="https://www.credly.com/go/mOVCBr56"
+                                    data-cert-alt="Certificado Gemini Enterprise Agent Development - Tiago Tavares"
+                                    data-i18n-attr="data-cert-alt:certs.agentDevAlt">
+                                    <span data-i18n="certs.viewCertificate">🔍 Visualizar Certificado</span>
+                                </button>
+                                <a href="https://www.credly.com/go/mOVCBr56" target="_blank" rel="noopener noreferrer" class="btn-cert-verify" data-i18n="certs.verifyCredly">✔ Verificar no Credly ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card cert-specialist" data-theme-hover="red">
+                        <img src="img/cert-gemini-deployment.png" width="345" height="345" loading="lazy" alt="Certified Partner Specialist - Gemini Enterprise Deployment" class="specialist-img">
+                        <div class="specialist-info">
+                            <div class="cert-Tag-row">
+                                <span class="specialist-tag">CERTIFIED PARTNER SPECIALIST</span>
+                                <span class="cert-validity" data-i18n="certs.deploymentValidity">Válido: Out 2026 – Abr 2027</span>
+                            </div>
+                            <h4>Gemini Enterprise Deployment</h4>
+                            <p data-i18n="certs.deploymentDesc">Especialização técnica na implantação, governança, integração segura e escalabilidade de soluções Gemini Enterprise em produção no Google Cloud.</p>
+                            <div class="cert-metadata">
+                                <span><strong>Issued by:</strong> Google Cloud</span>
+                                <span><strong>Credly:</strong> 55airxBI</span>
+                            </div>
+                            <div class="cert-actions">
+                                <button type="button" class="btn-cert-modal" aria-haspopup="dialog" aria-controls="certModal"
+                                    data-cert-open
+                                    data-cert-src="img/certificado-ge-deployment.png"
+                                    data-cert-width="1100" data-cert-height="850"
+                                    data-cert-title="Certified Partner Specialist — Gemini Enterprise Deployment"
+                                    data-cert-meta="Credly: 55airxBI"
+                                    data-cert-verify="https://www.credly.com/go/55airxBI"
+                                    data-cert-alt="Certificado Gemini Enterprise Deployment - Tiago Tavares"
+                                    data-i18n-attr="data-cert-alt:certs.deploymentAlt">
+                                    <span data-i18n="certs.viewCertificate">🔍 Visualizar Certificado</span>
+                                </button>
+                                <a href="https://www.credly.com/go/55airxBI" target="_blank" rel="noopener noreferrer" class="btn-cert-verify" data-i18n="certs.verifyCredly">✔ Verificar no Credly ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL (CARDS PERSONALIZADOS POR EMPRESA) -->
+        <section id="exp" class="exp">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="exp.tag">// TRAJETÓRIA &amp; IMPACTO</span>
+                <h2 class="secao-titulo" data-i18n="exp.title">Experiência Profissional</h2>
+                <p class="secao-subtitulo" data-i18n="exp.subtitle">Cada etapa com sua identidade e evolução técnica</p>
+            </div>
+
+            <div class="exp-caixa">
+                <!-- GENTROP (Tema Amarelo Ouro & Preto) -->
+                <article class="exp-card exp-gentrop" data-theme-hover="gentrop">
+                    <div class="exp-banner">
+                        <img src="img/gentrop.jpg" width="900" height="900" loading="lazy" alt="Gentrop" class="exp-imagem">
+                        <span class="exp-company-badge gentrop-badge">⚡ Google Cloud Premier Partner</span>
+                    </div>
+                    <div class="texto-exp-box">
+                        <div class="exp-header-row">
+                            <a href="https://www.gentrop.com" target="_blank" rel="noopener noreferrer">
+                                <h3 class="info-exp">Gentrop</h3>
+                            </a>
+                            <span class="exp-total-period" data-i18n="exp.gentrop.period">04/2025 – Atual</span>
+                        </div>
+
+                        <div class="career-timeline">
+                            <div class="timeline-role current-role">
+                                <div class="role-dot"></div>
+                                <div class="role-content">
+                                    <h4 data-i18n="exp.gentrop.role1">Desenvolvedor de IA (AI Developer)</h4>
+                                    <span class="role-time" data-i18n="exp.gentrop.role1Time">04/2026 – Atual</span>
+                                    <ul>
+                                        <li data-i18n-html="exp.gentrop.role1Item1">Arquitetura e orquestração de agentes autônomos em <strong>Python</strong> com <strong>Google ADK</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>.</li>
+                                        <li data-i18n-html="exp.gentrop.role1Item2">Construção de servidores <strong>MCP (Model Context Protocol)</strong>, fluxos de <strong>RAG</strong> e integração com <strong>APIs REST e SQL / BigQuery</strong>.</li>
+                                        <li data-i18n-html="exp.gentrop.role1Item3">Deploy serverless em <strong>Cloud Run, Cloud Scheduler e Secret Manager</strong> + interfaces web em <strong>TypeScript, HTML e CSS</strong>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-role">
+                                <div class="role-dot"></div>
+                                <div class="role-content">
+                                    <h4 data-i18n="exp.gentrop.role2">Estagiário em Desenvolvimento de IA</h4>
+                                    <span class="role-time" data-i18n="exp.gentrop.role2Time">04/2025 – 04/2026 (Efetivado)</span>
+                                    <p data-i18n="exp.gentrop.role2Desc">Desenvolvimento dos primeiros agentes de IA em Python no GCP, automação de processos críticos entre plataformas via APIs REST e criação de interfaces personalizadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- MAPLE BEAR (Tema Vermelho Canadense & Bilíngue) -->
+                <article class="exp-card exp-maple" data-theme-hover="maple">
+                    <div class="exp-banner">
+                        <img src="img/maplebear.jpg" width="900" height="900" loading="lazy" alt="Maple Bear" class="exp-imagem">
+                        <span class="exp-company-badge maple-badge" data-i18n="exp.maple.badge">🍁 Imersão Bilíngue (Inglês)</span>
+                    </div>
+                    <div class="texto-exp-box">
+                        <div class="exp-header-row">
+                            <a href="https://santos.maplebear.com.br" target="_blank" rel="noopener noreferrer">
+                                <h3 class="info-exp">Maple Bear Canadian School</h3>
+                            </a>
+                            <span class="exp-total-period">07/2024 – 03/2025</span>
+                        </div>
+                        <h4 class="single-role-title" data-i18n="exp.maple.role">Estagiário de Tecnologia Educacional (Robótica &amp; Programação)</h4>
+                        <p class="exp-paragrafo" data-i18n-html="exp.maple.desc">
+                            Ministração de aulas práticas de Programação, Robótica e LEGO Education para diferentes faixas etárias. Atuação diária em <strong>ambiente 100% bilíngue com comunicação em inglês</strong> com alunos e equipe pedagógica, desenvolvendo pensamento computacional e resolução colaborativa de problemas.
                         </p>
-                        <div class="cert-metadata">
-                            <span><strong>Series ID:</strong> 85470</span>
-                            <span><strong>Credential ID:</strong> af92810bd7154c9791ea31c3681d51f7</span>
-                        </div>
-                        <div class="cert-actions">
-                            <button type="button" class="btn-cert-modal" id="btnOpenCertModal">
-                                🔍 Visualizar Diploma Oficial
-                            </button>
+                        <div class="exp-tags">
+                            <span data-i18n="exp.maple.tag1">Inglês Bilíngue</span>
+                            <span data-i18n="exp.maple.tag2">Robótica</span>
+                            <span data-i18n="exp.maple.tag3">Pensamento Computacional</span>
                         </div>
                     </div>
+                </article>
+
+                <!-- LOGIC MINDS (Tema Laranja & Azul Puzzle / Lógica) -->
+                <article class="exp-card exp-logic" data-theme-hover="logic">
+                    <div class="exp-banner">
+                        <img src="img/logic_minds.jpg" width="900" height="900" loading="lazy" alt="Logic Minds" class="exp-imagem">
+                        <span class="exp-company-badge logic-badge" data-i18n="exp.logic.badge">🧩 Lógica &amp; Robótica</span>
+                    </div>
+                    <div class="texto-exp-box">
+                        <div class="exp-header-row">
+                            <a href="https://logicminds.com.br" target="_blank" rel="noopener noreferrer">
+                                <h3 class="info-exp">Logic Minds</h3>
+                            </a>
+                            <span class="exp-total-period">01/2024 – 06/2024</span>
+                        </div>
+                        <h4 class="single-role-title" data-i18n="exp.logic.role">Estagiário de Robótica e Programação</h4>
+                        <p class="exp-paragrafo" data-i18n="exp.logic.desc">
+                            Criação e estruturação de materiais didáticos técnicos e projetos práticos para cursos de lógica de programação e robótica. Suporte em sala de aula para diferentes níveis de ensino, consolidando forte capacidade de comunicação técnica e didática.
+                        </p>
+                        <div class="exp-tags">
+                            <span data-i18n="exp.logic.tag1">Lógica de Programação</span>
+                            <span data-i18n="exp.logic.tag2">Material Técnico</span>
+                            <span data-i18n="exp.logic.tag3">Mentoria</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- HABILIDADES TÉCNICAS / STACK -->
+        <section id="habilidade" class="habilidade">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills.tag">// ECOSSISTEMA TÉCNICO</span>
+                <h2 class="secao-titulo" data-i18n="skills.title">Stack &amp; Habilidades</h2>
+            </div>
+
+            <div class="habilidade-caixa">
+                <div class="habilidade-card" title="Python (AsyncIO, Pydantic, SQLAlchemy, FastAPI)">
+                    <img src="img/Python.png" width="512" height="512" loading="lazy" alt="Python" class="habilidade-imagem">
+                    <span class="habilidade-nome">Python</span>
+                    <span class="habilidade-nivel" data-i18n="skills.python">Core IA</span>
+                </div>
+                <div class="habilidade-card" title="Google Agent Development Kit (ADK)">
+                    <img src="img/adk.png" width="512" height="512" loading="lazy" alt="Google ADK" class="habilidade-imagem">
+                    <span class="habilidade-nome">Google ADK</span>
+                    <span class="habilidade-nivel" data-i18n="skills.adk">Multi-Agentes</span>
+                </div>
+                <div class="habilidade-card" title="Google Cloud Platform, Agent Platform, Cloud Run, BigQuery">
+                    <img src="img/google.png" width="512" height="512" loading="lazy" alt="Google Cloud Platform" class="habilidade-imagem">
+                    <span class="habilidade-nome">Google Cloud</span>
+                    <span class="habilidade-nivel" data-i18n="skills.gcp">Agent Platform</span>
+                </div>
+                <div class="habilidade-card" title="SQL, BigQuery &amp; Bancos Relacionais">
+                    <img src="img/sql.png" width="773" height="811" loading="lazy" alt="SQL &amp; BigQuery" class="habilidade-imagem">
+                    <span class="habilidade-nome">SQL / BigQuery</span>
+                    <span class="habilidade-nivel" data-i18n="skills.sql">Dados &amp; RAG</span>
+                </div>
+                <div class="habilidade-card" title="TypeScript &amp; JavaScript">
+                    <img src="img/js.png" width="512" height="512" loading="lazy" alt="TypeScript / JS" class="habilidade-imagem">
+                    <span class="habilidade-nome">TS / JS</span>
+                    <span class="habilidade-nivel" data-i18n="skills.js">Web &amp; Front</span>
+                </div>
+                <div class="habilidade-card" title="HTML5 Semântico">
+                    <img src="img/html.png" width="2400" height="3384" loading="lazy" alt="HTML5" class="habilidade-imagem">
+                    <span class="habilidade-nome">HTML5</span>
+                    <span class="habilidade-nivel" data-i18n="skills.html">Interfaces</span>
+                </div>
+                <div class="habilidade-card" title="CSS3 Moderno &amp; UI Responsiva">
+                    <img src="img/css.png" width="512" height="512" loading="lazy" alt="CSS3" class="habilidade-imagem">
+                    <span class="habilidade-nome">CSS3</span>
+                    <span class="habilidade-nivel" data-i18n="skills.css">Estilização</span>
+                </div>
+                <div class="habilidade-card" title="Git &amp; GitHub">
+                    <img src="img/git.png" width="512" height="512" loading="lazy" alt="Git" class="habilidade-imagem">
+                    <span class="habilidade-nome">Git / GitHub</span>
+                    <span class="habilidade-nivel" data-i18n="skills.git">Versionamento</span>
                 </div>
             </div>
 
-            <!-- Cards Partner Specialist -->
-            <div class="cert-specialists-grid">
-                <div class="cert-card cert-specialist" data-theme-hover="red">
-                    <img src="img/cert-gemini-agent-dev.png" alt="Certified Partner Specialist - Gemini Enterprise Agent Development" class="specialist-img">
-                    <div class="specialist-info">
-                        <span class="specialist-tag">CERTIFIED PARTNER SPECIALIST</span>
-                        <h4>Gemini Enterprise Agent Development</h4>
-                        <p>Especialização técnica oficial no desenvolvimento e orquestração de agentes corporativos com Google ADK, Agent Platform e Gemini Enterprise.</p>
-                    </div>
-                </div>
-
-                <div class="cert-card cert-specialist" data-theme-hover="red">
-                    <img src="img/cert-gemini-deployment.png" alt="Certified Partner Specialist - Gemini Enterprise Deployment" class="specialist-img">
-                    <div class="specialist-info">
-                        <span class="specialist-tag">CERTIFIED PARTNER SPECIALIST</span>
-                        <h4>Gemini Enterprise Deployment</h4>
-                        <p>Especialização técnica na implantação, governança, integração segura e escalabilidade de soluções Gemini Enterprise em produção no Google Cloud.</p>
-                    </div>
-                </div>
+            <div class="ai-specialties-bar">
+                <span class="spec-chip">🤖 Gemini Enterprise (Agentspace)</span>
+                <span class="spec-chip" data-i18n="skills.chipMcp">🔌 Servidores MCP (Model Context Protocol)</span>
+                <span class="spec-chip" data-i18n="skills.chipRag">📚 RAG (Retrieval-Augmented Generation)</span>
+                <span class="spec-chip" data-i18n="skills.chipPrompt">🎯 Engenharia de Prompt</span>
+                <span class="spec-chip">☁️ Cloud Run &amp; Cloud Scheduler</span>
+                <span class="spec-chip" data-i18n="skills.chipSecrets">🔐 Secret Manager &amp; APIs REST</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- EXPERIÊNCIA PROFISSIONAL (CARDS PERSONALIZADOS POR EMPRESA) -->
-    <section id="exp" class="exp">
-        <div class="section-header">
-            <span class="section-tag">// TRAJETÓRIA &amp; IMPACTO</span>
-            <h2 class="secao-titulo">Experiência Profissional</h2>
-            <p class="secao-subtitulo">Cada etapa com sua identidade e evolução técnica</p>
-        </div>
+        <!-- PROJETOS (100% PERSONALIZADOS POR UNIVERSO) -->
+        <section id="projetos" class="projetos">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects.tag">// LABORATÓRIO CRIATIVO &amp; ENGENHARIA</span>
+                <h2 class="secao-titulo" data-i18n="projects.title">Meus Projetos</h2>
+                <p class="secao-subtitulo" data-i18n="projects.subtitle">Passe o mouse ou interaja com cada card — cada projeto tem seu próprio universo visual</p>
+            </div>
 
-        <div class="exp-caixa">
-            <!-- GENTROP (Tema Amarelo Ouro & Preto) -->
-            <article class="exp-card exp-gentrop" data-theme-hover="gentrop">
-                <div class="exp-banner">
-                    <img src="img/gentrop.jpg" alt="Gentrop" class="exp-imagem">
-                    <span class="exp-company-badge gentrop-badge">⚡ Google Cloud Premier Partner</span>
-                </div>
-                <div class="texto-exp-box">
-                    <div class="exp-header-row">
-                        <a href="https://www.gentrop.com" target="_blank" rel="noopener noreferrer">
-                            <h3 class="info-exp">Gentrop</h3>
-                        </a>
-                        <span class="exp-total-period">04/2025 – Atual</span>
+            <div class="projetos-caixa">
+
+                <!-- PROJETO 1: POKEWEATHER (TEMA POKÉDEX / POKÉBOLA) -->
+                <article class="projetos-card theme-pokemon" data-theme-hover="pokemon">
+                    <div class="pokedex-header">
+                        <div class="pokedex-lens-group" aria-hidden="true">
+                            <span class="pokedex-camera-lens"></span>
+                            <span class="pokedex-led led-red"></span>
+                            <span class="pokedex-led led-yellow"></span>
+                            <span class="pokedex-led led-green"></span>
+                        </div>
+                        <span class="pokedex-id">#001 • POKE-API</span>
                     </div>
 
-                    <div class="career-timeline">
-                        <div class="timeline-role current-role">
-                            <div class="role-dot"></div>
-                            <div class="role-content">
-                                <h4>Desenvolvedor de IA (AI Developer)</h4>
-                                <span class="role-time">04/2026 – Atual</span>
-                                <ul>
-                                    <li>Arquitetura e orquestração de agentes autônomos em <strong>Python</strong> com <strong>Google ADK</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>.</li>
-                                    <li>Construção de servidores <strong>MCP (Model Context Protocol)</strong>, fluxos de <strong>RAG</strong> e integração com <strong>APIs REST e SQL / BigQuery</strong>.</li>
-                                    <li>Deploy serverless em <strong>Cloud Run, Cloud Scheduler e Secret Manager</strong> + interfaces web em <strong>TypeScript, HTML e CSS</strong>.</li>
-                                </ul>
+                    <div class="poke-banner">
+                        <img src="img/pok.png" width="512" height="512" loading="lazy" alt="PokeWeather" class="projetos-imagem poke-img">
+                        <div class="pokeball-divider" aria-hidden="true">
+                            <div class="pokeball-center-btn"></div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-texto-projetos">
+                        <div class="poke-title-row">
+                            <h3 class="info-projetos">PokeWeather</h3>
+                            <span class="poke-lvl">Lv. 99</span>
+                        </div>
+
+                        <div class="poke-hp-bar-wrap" aria-hidden="true">
+                            <span class="hp-label">WEATHER SYNC</span>
+                            <div class="poke-hp-track">
+                                <div class="poke-hp-fill"></div>
+                            </div>
+                            <span class="hp-num">100/100</span>
+                        </div>
+
+                        <div class="poke-types">
+                            <span class="poke-type type-fire">🔥 PYTHON</span>
+                            <span class="poke-type type-electric">⚡ POKEAPI</span>
+                            <span class="poke-type type-water">💧 OPENWEATHER</span>
+                            <span class="poke-type type-grass">🌿 SQLALCHEMY</span>
+                        </div>
+
+                        <p class="paragrafo-projetos" data-i18n-html="projects.poke.desc">
+                            Aplicação em <strong>Python</strong> que conecta o clima real de qualquer cidade (via <strong>OpenWeather API</strong>) ao ecossistema Pokémon (<strong>PokeAPI</strong>). Armazena treinadores e seus Pokémons em banco <strong>SQLite</strong> local utilizando ORM <strong>SQLAlchemy</strong> e boas práticas com <code>python-dotenv</code>.
+                        </p>
+
+                        <div class="card-footer-actions">
+                            <a href="https://github.com/TiagoTavares05/PokeWeather" target="_blank" rel="noopener noreferrer" class="btn-themed btn-pokemon" data-i18n="projects.poke.cta">
+                                🔴 Acessar Pokédex no GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJETO 2: GAMEBOY AGENT (TEMA CONSOLE PORTÁTIL RETRÔ) -->
+                <article class="projetos-card theme-gameboy" data-theme-hover="gameboy">
+                    <div class="gb-console-top">
+                        <span class="gb-dot-matrix">DOT MATRIX WITH AI AGENT STEREO</span>
+                    </div>
+
+                    <div class="gb-screen-bezel">
+                        <div class="gb-battery-indicator" aria-hidden="true">
+                            <span class="gb-battery-led"></span>
+                            <span class="gb-battery-text">BATTERY</span>
+                        </div>
+                        <div class="gb-lcd-screen">
+                            <img src="img/gameboy.png" width="860" height="577" loading="lazy" alt="Gameboy Agent" class="projetos-imagem gb-img">
+                            <div class="gb-dialogue-box" id="gbDialogue" aria-live="polite" data-i18n="projects.gameboy.dialogue">
+                                &gt; AI POKÉDEX READY! PRESSIONE A OU B...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-texto-projetos gb-body">
+                        <div class="gb-brand-line">
+                            <span class="gb-nintendo-badge">GAME BOY</span>
+                            <h3 class="info-projetos gb-title">Gameboy Agent</h3>
+                        </div>
+
+                        <div class="gb-pixel-tags">
+                            <span>[AI AGENT]</span>
+                            <span>[RETRO UI]</span>
+                            <span>[LLM POKÉDEX]</span>
+                        </div>
+
+                        <p class="paragrafo-projetos" data-i18n-html="projects.gameboy.desc">
+                            Uma Pokédex interativa dentro de um <strong>Game Boy clássico</strong>! Converse em linguagem natural com um <strong>Agente de IA</strong> para descobrir estatísticas, fraquezas, lore e estratégias dos seus Pokémon favoritos através de uma interface retrô nostálgica e funcional.
+                        </p>
+
+                        <div class="gb-controls-row">
+                            <div class="gb-dpad" aria-hidden="true">
+                                <span class="dpad-up">▲</span>
+                                <span class="dpad-left">◄</span>
+                                <span class="dpad-center">●</span>
+                                <span class="dpad-right">►</span>
+                                <span class="dpad-down">▼</span>
+                            </div>
+                            <div class="gb-ab-buttons">
+                                <button type="button" class="gb-btn-round" data-gb-button="B" title="Testar botão B" data-i18n-attr="title:projects.gameboy.buttonB;aria-label:projects.gameboy.buttonB">B</button>
+                                <button type="button" class="gb-btn-round" data-gb-button="A" title="Testar botão A" data-i18n-attr="title:projects.gameboy.buttonA;aria-label:projects.gameboy.buttonA">A</button>
                             </div>
                         </div>
 
-                        <div class="timeline-role">
-                            <div class="role-dot"></div>
-                            <div class="role-content">
-                                <h4>Estagiário em Desenvolvimento de IA</h4>
-                                <span class="role-time">04/2025 – 04/2026 (Efetivado)</span>
-                                <p>Desenvolvimento dos primeiros agentes de IA em Python no GCP, automação de processos críticos entre plataformas via APIs REST e criação de interfaces personalizadas.</p>
-                            </div>
+                        <div class="card-footer-actions">
+                            <a href="https://github.com/TiagoTavares05/gameboy_agent" target="_blank" rel="noopener noreferrer" class="btn-themed btn-gameboy" data-i18n="projects.gameboy.cta">
+                                👾 START • Ver Código no GitHub ↗
+                            </a>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- MAPLE BEAR (Tema Vermelho Canadense & Bilíngue) -->
-            <article class="exp-card exp-maple" data-theme-hover="maple">
-                <div class="exp-banner">
-                    <img src="img/maplebear.jpg" alt="Maple Bear" class="exp-imagem">
-                    <span class="exp-company-badge maple-badge">🍁 Imersão Bilíngue (Inglês)</span>
-                </div>
-                <div class="texto-exp-box">
-                    <div class="exp-header-row">
-                        <a href="https://santos.maplebear.com.br" target="_blank" rel="noopener noreferrer">
-                            <h3 class="info-exp">Maple Bear Canadian School</h3>
-                        </a>
-                        <span class="exp-total-period">07/2024 – 03/2025</span>
-                    </div>
-                    <h4 class="single-role-title">Estagiário de Tecnologia Educacional (Robótica &amp; Programação)</h4>
-                    <p class="exp-paragrafo">
-                        Ministração de aulas práticas de Programação, Robótica e LEGO Education para diferentes faixas etárias. Atuação diária em <strong>ambiente 100% bilíngue com comunicação em inglês</strong> com alunos e equipe pedagógica, desenvolvendo pensamento computacional e resolução colaborativa de problemas.
-                    </p>
-                    <div class="exp-tags">
-                        <span>Inglês Bilíngue</span>
-                        <span>Robótica</span>
-                        <span>Pensamento Computacional</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- LOGIC MINDS (Tema Laranja & Azul Puzzle / Lógica) -->
-            <article class="exp-card exp-logic" data-theme-hover="logic">
-                <div class="exp-banner">
-                    <img src="img/logic_minds.jpg" alt="Logic Minds" class="exp-imagem">
-                    <span class="exp-company-badge logic-badge">🧩 Lógica &amp; Robótica</span>
-                </div>
-                <div class="texto-exp-box">
-                    <div class="exp-header-row">
-                        <a href="https://logicminds.com.br" target="_blank" rel="noopener noreferrer">
-                            <h3 class="info-exp">Logic Minds</h3>
-                        </a>
-                        <span class="exp-total-period">01/2024 – 06/2024</span>
-                    </div>
-                    <h4 class="single-role-title">Estagiário de Robótica e Programação</h4>
-                    <p class="exp-paragrafo">
-                        Criação e estruturação de materiais didáticos técnicos e projetos práticos para cursos de lógica de programação e robótica. Suporte em sala de aula para diferentes níveis de ensino, consolidando forte capacidade de comunicação técnica e didática.
-                    </p>
-                    <div class="exp-tags">
-                        <span>Lógica de Programação</span>
-                        <span>Material Técnico</span>
-                        <span>Mentoria</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- HABILIDADES TÉCNICAS / STACK -->
-    <section id="habilidade" class="habilidade">
-        <div class="section-header">
-            <span class="section-tag">// ECOSSISTEMA TÉCNICO</span>
-            <h2 class="secao-titulo">Stack &amp; Habilidades</h2>
-        </div>
-
-        <div class="habilidade-caixa">
-            <div class="habilidade-card" title="Python (AsyncIO, Pydantic, SQLAlchemy, FastAPI)">
-                <img src="img/Python.png" alt="Python" class="habilidade-imagem">
-                <span class="habilidade-nome">Python</span>
-                <span class="habilidade-nivel">Core IA</span>
-            </div>
-            <div class="habilidade-card" title="Google Agent Development Kit (ADK)">
-                <img src="img/adk.png" alt="Google ADK" class="habilidade-imagem">
-                <span class="habilidade-nome">Google ADK</span>
-                <span class="habilidade-nivel">Multi-Agentes</span>
-            </div>
-            <div class="habilidade-card" title="Google Cloud Platform, Agent Platform, Cloud Run, BigQuery">
-                <img src="img/google.png" alt="Google Cloud Platform" class="habilidade-imagem">
-                <span class="habilidade-nome">Google Cloud</span>
-                <span class="habilidade-nivel">Agent Platform</span>
-            </div>
-            <div class="habilidade-card" title="SQL, BigQuery &amp; Bancos Relacionais">
-                <img src="img/sql.png" alt="SQL &amp; BigQuery" class="habilidade-imagem">
-                <span class="habilidade-nome">SQL / BigQuery</span>
-                <span class="habilidade-nivel">Dados &amp; RAG</span>
-            </div>
-            <div class="habilidade-card" title="TypeScript &amp; JavaScript">
-                <img src="img/js.png" alt="TypeScript / JS" class="habilidade-imagem">
-                <span class="habilidade-nome">TS / JS</span>
-                <span class="habilidade-nivel">Web &amp; Front</span>
-            </div>
-            <div class="habilidade-card" title="HTML5 Semântico">
-                <img src="img/html.png" alt="HTML5" class="habilidade-imagem">
-                <span class="habilidade-nome">HTML5</span>
-                <span class="habilidade-nivel">Interfaces</span>
-            </div>
-            <div class="habilidade-card" title="CSS3 Moderno &amp; UI Responsiva">
-                <img src="img/css.png" alt="CSS3" class="habilidade-imagem">
-                <span class="habilidade-nome">CSS3</span>
-                <span class="habilidade-nivel">Estilização</span>
-            </div>
-            <div class="habilidade-card" title="Git &amp; GitHub">
-                <img src="img/git.png" alt="Git" class="habilidade-imagem">
-                <span class="habilidade-nome">Git / GitHub</span>
-                <span class="habilidade-nivel">Versionamento</span>
-            </div>
-        </div>
-
-        <div class="ai-specialties-bar">
-            <span class="spec-chip">🤖 Gemini Enterprise (Agentspace)</span>
-            <span class="spec-chip">🔌 Servidores MCP (Model Context Protocol)</span>
-            <span class="spec-chip">📚 RAG (Retrieval-Augmented Generation)</span>
-            <span class="spec-chip">🎯 Engenharia de Prompt</span>
-            <span class="spec-chip">☁️ Cloud Run &amp; Cloud Scheduler</span>
-            <span class="spec-chip">🔐 Secret Manager &amp; APIs REST</span>
-        </div>
-    </section>
-
-    <!-- PROJETOS (100% PERSONALIZADOS POR UNIVERSO) -->
-    <section id="projetos" class="projetos">
-        <div class="section-header">
-            <span class="section-tag">// LABORATÓRIO CRIATIVO &amp; ENGENHARIA</span>
-            <h2 class="secao-titulo">Meus Projetos</h2>
-            <p class="secao-subtitulo">Passe o mouse ou interaja com cada card — cada projeto tem seu próprio universo visual</p>
-        </div>
-
-        <div class="projetos-caixa">
-
-            <!-- =======================================================
-                 PROJETO 1: POKEWEATHER (TEMA POKÉDEX / POKÉBOLA)
-                 ======================================================= -->
-            <article class="projetos-card theme-pokemon" data-theme-hover="pokemon">
-                <div class="pokedex-header">
-                    <div class="pokedex-lens-group">
-                        <span class="pokedex-camera-lens"></span>
-                        <span class="pokedex-led led-red"></span>
-                        <span class="pokedex-led led-yellow"></span>
-                        <span class="pokedex-led led-green"></span>
-                    </div>
-                    <span class="pokedex-id">#001 • POKE-API</span>
-                </div>
-
-                <div class="poke-banner">
-                    <img src="img/pok.png" alt="PokeWeather" class="projetos-imagem poke-img">
-                    <div class="pokeball-divider">
-                        <div class="pokeball-center-btn" title="Pokébola Ativa!"></div>
-                    </div>
-                </div>
-
-                <div class="caixa-texto-projetos">
-                    <div class="poke-title-row">
-                        <h3 class="info-projetos">PokeWeather</h3>
-                        <span class="poke-lvl">Lv. 99</span>
-                    </div>
-
-                    <div class="poke-hp-bar-wrap">
-                        <span class="hp-label">WEATHER SYNC</span>
-                        <div class="poke-hp-track">
-                            <div class="poke-hp-fill"></div>
-                        </div>
-                        <span class="hp-num">100/100</span>
-                    </div>
-
-                    <div class="poke-types">
-                        <span class="poke-type type-fire">🔥 PYTHON</span>
-                        <span class="poke-type type-electric">⚡ POKEAPI</span>
-                        <span class="poke-type type-water">💧 OPENWEATHER</span>
-                        <span class="poke-type type-grass">🌿 SQLALCHEMY</span>
-                    </div>
-
-                    <p class="paragrafo-projetos">
-                        Aplicação em <strong>Python</strong> que conecta o clima real de qualquer cidade (via <strong>OpenWeather API</strong>) ao ecossistema Pokémon (<strong>PokeAPI</strong>). Armazena treinadores e seus Pokémons em banco <strong>SQLite</strong> local utilizando ORM <strong>SQLAlchemy</strong> e boas práticas com <code>python-dotenv</code>.
-                    </p>
-
-                    <div class="card-footer-actions">
-                        <a href="https://github.com/TiagoTavares05/PokeWeather" target="_blank" rel="noopener noreferrer" class="btn-themed btn-pokemon">
-                            🔴 Acessar Pokédex no GitHub ↗
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- =======================================================
-                 PROJETO 2: GAMEBOY AGENT (TEMA CONSOLE NINTENDO GAME BOY)
-                 ======================================================= -->
-            <article class="projetos-card theme-gameboy" data-theme-hover="gameboy">
-                <div class="gb-console-top">
-                    <span class="gb-dot-matrix">DOT MATRIX WITH AI AGENT STEREO</span>
-                </div>
-
-                <div class="gb-screen-bezel">
-                    <div class="gb-battery-indicator">
-                        <span class="gb-battery-led"></span>
-                        <span class="gb-battery-text">BATTERY</span>
-                    </div>
-                    <div class="gb-lcd-screen">
-                        <img src="img/gameboy.png" alt="Gameboy Agent" class="projetos-imagem gb-img">
-                        <div class="gb-dialogue-box" id="gbDialogue">
-                            &gt; AI POKÉDEX READY! PRESSIONE A OU B...
-                        </div>
-                    </div>
-                </div>
-
-                <div class="caixa-texto-projetos gb-body">
-                    <div class="gb-brand-line">
-                        <span class="gb-nintendo-badge">GAME BOY</span>
-                        <h3 class="info-projetos gb-title">Gameboy Agent</h3>
-                    </div>
-
-                    <div class="gb-pixel-tags">
-                        <span>[AI AGENT]</span>
-                        <span>[RETRO UI]</span>
-                        <span>[LLM POKÉDEX]</span>
-                    </div>
-
-                    <p class="paragrafo-projetos">
-                        Uma Pokédex interativa dentro de um <strong>Game Boy clássico</strong>! Converse em linguagem natural com um <strong>Agente de IA</strong> para descobrir estatísticas, fraquezas, lore e estratégias dos seus Pokémon favoritos através de uma interface retrô nostálgica e funcional.
-                    </p>
-
-                    <div class="gb-controls-row">
-                        <div class="gb-dpad" title="D-Pad Retrô">
-                            <span class="dpad-up">▲</span>
-                            <span class="dpad-left">◄</span>
-                            <span class="dpad-center">●</span>
-                            <span class="dpad-right">►</span>
-                            <span class="dpad-down">▼</span>
-                        </div>
-                        <div class="gb-ab-buttons">
-                            <button type="button" class="gb-btn-round" id="gbBtnB" title="Testar botão B">B</button>
-                            <button type="button" class="gb-btn-round" id="gbBtnA" title="Testar botão A">A</button>
-                        </div>
-                    </div>
-
-                    <div class="card-footer-actions">
-                        <a href="https://github.com/TiagoTavares05/gameboy_agent" target="_blank" rel="noopener noreferrer" class="btn-themed btn-gameboy">
-                            👾 START • Ver Código no GitHub ↗
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- =======================================================
-                 PROJETO 3: SPOTIFY WEB APP (TEMA PLAYER SPOTIFY NEON)
-                 ======================================================= -->
-            <article class="projetos-card theme-spotify" data-theme-hover="spotify">
-                <div class="spotify-topbar">
-                    <span class="spotify-live-pill">
-                        <span class="eq-bars" id="spotifyEq">
-                            <i></i><i></i><i></i><i></i>
+                <!-- PROJETO 3: SPOTIFY WEB APP (TEMA PLAYER NEON) -->
+                <article class="projetos-card theme-spotify" data-theme-hover="spotify">
+                    <div class="spotify-topbar">
+                        <span class="spotify-live-pill">
+                            <span class="eq-bars" aria-hidden="true">
+                                <i></i><i></i><i></i><i></i>
+                            </span>
+                            NOW PLAYING • SPOTIFY API
                         </span>
-                        NOW PLAYING • SPOTIFY API
-                    </span>
-                    <span class="spotify-quality">HI-FI WEB</span>
-                </div>
+                        <span class="spotify-quality">HI-FI WEB</span>
+                    </div>
 
-                <div class="spotify-cover-wrap">
-                    <img src="img/spo.jpg" alt="Spotify App" class="projetos-imagem spotify-img">
-                    <button type="button" class="spotify-floating-play" id="spotifyPlayBtn" aria-label="Simular Play/Pause" title="Clique para pausar/tocar animação">
-                        ❚❚
-                    </button>
-                </div>
+                    <div class="spotify-cover-wrap">
+                        <img src="img/spo.jpg" width="736" height="736" loading="lazy" alt="Spotify App" class="projetos-imagem spotify-img">
+                        <button type="button" class="spotify-floating-play" aria-pressed="true" aria-label="Pausar animação">
+                            ❚❚
+                        </button>
+                    </div>
 
-                <div class="caixa-texto-projetos">
-                    <h3 class="info-projetos spotify-title">Spotify Web Experience</h3>
-                    <p class="spotify-artist">Tiago Tavares • Full-Stack &amp; REST API Integration</p>
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos spotify-title">Spotify Web Experience</h3>
+                        <p class="spotify-artist">Tiago Tavares • Full-Stack &amp; REST API Integration</p>
 
-                    <div class="spotify-player-bar">
-                        <span class="sp-time" id="spCurrentTime">01:24</span>
-                        <div class="sp-track">
-                            <div class="sp-fill" id="spProgressFill"></div>
-                            <div class="sp-thumb"></div>
+                        <div class="spotify-player-bar" aria-hidden="true">
+                            <span class="sp-time sp-current-time">01:41</span>
+                            <div class="sp-track">
+                                <div class="sp-fill"></div>
+                                <div class="sp-thumb"></div>
+                            </div>
+                            <span class="sp-time">03:45</span>
                         </div>
-                        <span class="sp-time">03:45</span>
+
+                        <div class="spotify-tags">
+                            <span>Spotify Web API</span>
+                            <span>OAuth 2.0</span>
+                            <span>TypeScript / JS</span>
+                            <span>Dynamic UI</span>
+                        </div>
+
+                        <p class="paragrafo-projetos" data-i18n-html="projects.spotify.desc">
+                            Aplicação web interativa integrada à <strong>Spotify Web API</strong> para exploração de artistas, faixas, playlists e métricas musicais em tempo real, aplicando autenticação segura, consumo assíncrono de APIs REST e design escuro inspirado no player oficial.
+                        </p>
+
+                        <div class="card-footer-actions">
+                            <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer" class="btn-themed btn-spotify" data-i18n="projects.spotify.cta">
+                                🎧 Ouvir Código no GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJETO 4: PROJETOS JÁ REALIZADOS (AGENTES, MCP & GCP) -->
+                <article class="projetos-card theme-adk" data-theme-hover="red">
+                    <div class="adk-topbar">
+                        <span class="adk-badge" data-i18n="projects.adk.badge">✦ PROJETOS CORPORATIVOS &amp; IA</span>
+                        <span class="adk-status" data-i18n="projects.adk.status">GCP • EM PRODUÇÃO</span>
                     </div>
 
-                    <div class="spotify-tags">
-                        <span>Spotify Web API</span>
-                        <span>OAuth 2.0</span>
-                        <span>TypeScript / JS</span>
-                        <span>Dynamic UI</span>
+                    <!-- Diagrama Visual de Orquestração de Agentes -->
+                    <div class="adk-architecture-visual">
+                        <div class="arch-node node-user">
+                            <span class="node-icon" aria-hidden="true">👤</span>
+                            <span class="node-label">User / UI</span>
+                        </div>
+                        <div class="arch-arrow" aria-hidden="true">➔</div>
+                        <div class="arch-node node-adk">
+                            <img src="img/adk.png" width="512" height="512" loading="lazy" alt="" class="arch-node-img">
+                            <span class="node-label">Google ADK</span>
+                        </div>
+                        <div class="arch-arrow" aria-hidden="true">➔</div>
+                        <div class="arch-node node-mcp">
+                            <span class="node-icon" aria-hidden="true">🔌</span>
+                            <span class="node-label">MCP &amp; RAG</span>
+                        </div>
+                        <div class="arch-arrow" aria-hidden="true">➔</div>
+                        <div class="arch-node node-gcp">
+                            <img src="img/google.png" width="512" height="512" loading="lazy" alt="" class="arch-node-img">
+                            <span class="node-label">BigQuery / APIs</span>
+                        </div>
                     </div>
 
-                    <p class="paragrafo-projetos">
-                        Aplicação web interativa integrada à <strong>Spotify Web API</strong> para exploração de artistas, faixas, playlists e métricas musicais em tempo real, aplicando autenticação segura, consumo assíncrono de APIs REST e design escuro inspirado no player oficial.
-                    </p>
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos adk-title" data-i18n="projects.adk.title">Projetos Já Realizados</h3>
+                        <p class="adk-subtitle">Google Cloud Agent Platform • Gemini Enterprise • MCP Servers</p>
 
-                    <div class="card-footer-actions">
-                        <a href="https://github.com/TiagoTavares05" target="_blank" rel="noopener noreferrer" class="btn-themed btn-spotify">
-                            🎧 Ouvir Código no GitHub ↗
-                        </a>
-                    </div>
-                </div>
-            </article>
+                        <div class="adk-tags">
+                            <span data-i18n="projects.adk.tag1">Agentes BigQuery (Text-to-SQL)</span>
+                            <span data-i18n="projects.adk.tag2">Servidores MCP</span>
+                            <span data-i18n="projects.adk.tag3">Automação RH &amp; CX</span>
+                            <span>Cloud Run</span>
+                        </div>
 
-            <!-- =======================================================
-                 PROJETO 4: PROJETOS JÁ REALIZADOS (AGENTES, MCP & GCP)
-                 ======================================================= -->
-            <article class="projetos-card theme-adk" data-theme-hover="red">
-                <div class="adk-topbar">
-                    <span class="adk-badge">✦ PROJETOS CORPORATIVOS &amp; IA</span>
-                    <span class="adk-status">GCP • EM PRODUÇÃO</span>
-                </div>
+                        <p class="paragrafo-projetos" data-i18n-html="projects.adk.desc">
+                            Soluções reais desenvolvidas em <strong>Python</strong> e <strong>Google Cloud</strong>: agentes de análise de dados e <strong>Text-to-SQL no BigQuery</strong>, servidores <strong>MCP (Model Context Protocol)</strong> para integração com plataformas corporativas, automação inteligente de processos de RH e atendimento (CX) e interfaces personalizadas em <strong>TypeScript</strong>.
+                        </p>
 
-                <!-- Diagrama Visual de Orquestração de Agentes -->
-                <div class="adk-architecture-visual">
-                    <div class="arch-node node-user">
-                        <span class="node-icon">👤</span>
-                        <span class="node-label">User / UI</span>
+                        <div class="card-footer-actions">
+                            <a href="#contatos" class="btn-themed btn-adk" data-i18n="projects.adk.cta">
+                                🚀 Conversar sobre Soluções em IA
+                            </a>
+                        </div>
                     </div>
-                    <div class="arch-arrow">➔</div>
-                    <div class="arch-node node-adk">
-                        <img src="img/adk.png" alt="ADK" class="arch-node-img">
-                        <span class="node-label">Google ADK</span>
-                    </div>
-                    <div class="arch-arrow">➔</div>
-                    <div class="arch-node node-mcp">
-                        <span class="node-icon">🔌</span>
-                        <span class="node-label">MCP &amp; RAG</span>
-                    </div>
-                    <div class="arch-arrow">➔</div>
-                    <div class="arch-node node-gcp">
-                        <img src="img/google.png" alt="GCP" class="arch-node-img">
-                        <span class="node-label">BigQuery / APIs</span>
-                    </div>
-                </div>
+                </article>
 
-                <div class="caixa-texto-projetos">
-                    <h3 class="info-projetos adk-title">Projetos Já Realizados</h3>
-                    <p class="adk-subtitle">Google Cloud Agent Platform • Gemini Enterprise • MCP Servers</p>
+            </div>
+        </section>
 
-                    <div class="adk-tags">
-                        <span>Agentes BigQuery (Text-to-SQL)</span>
-                        <span>Servidores MCP</span>
-                        <span>Automação RH &amp; CX</span>
-                        <span>Cloud Run</span>
+        <!-- CONTATO -->
+        <section id="contatos" class="contatos">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">// VAMOS CONVERSAR?</span>
+                <h2 class="secao-titulo" data-i18n="contact.title">Entre em Contato</h2>
+                <p class="secao-subtitulo" data-i18n="contact.subtitle">Disponível para conexões, projetos de IA e oportunidades como Desenvolvedor de IA / AI Engineer</p>
+            </div>
+
+            <div class="contato-wrapper">
+                <form class="formulario-contato" id="formulario" novalidate>
+                    <div class="grupo-form">
+                        <label for="nome" class="label-form" data-i18n="contact.nameLabel">Seu Nome ou Empresa</label>
+                        <input id="nome" name="nome" class="campo-form" autocomplete="name" maxlength="80" required
+                            placeholder="Ex: Maria Silva (Tech Recruiter)" data-i18n-attr="placeholder:contact.namePlaceholder">
                     </div>
 
-                    <p class="paragrafo-projetos">
-                        Soluções reais desenvolvidas em <strong>Python</strong> e <strong>Google Cloud</strong>: agentes de análise de dados e <strong>Text-to-SQL no BigQuery</strong>, servidores <strong>MCP (Model Context Protocol)</strong> para integração com plataformas corporativas, automação inteligente de processos de RH e atendimento (CX) e interfaces personalizadas em <strong>TypeScript</strong>.
-                    </p>
-
-                    <div class="card-footer-actions">
-                        <a href="#contatos" class="btn-themed btn-adk">
-                            🚀 Conversar sobre Soluções em IA
-                        </a>
+                    <div class="grupo-form">
+                        <label for="mensagem" class="label-form" data-i18n="contact.messageLabel">Sua Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="campo-form" rows="5" maxlength="1000" required
+                            placeholder="Olá Tiago! Vi seu portfólio e suas certificações Google Cloud e gostaria de conversar..." data-i18n-attr="placeholder:contact.messagePlaceholder"></textarea>
                     </div>
-                </div>
-            </article>
 
-        </div>
-    </section>
+                    <p class="form-feedback" role="status" aria-live="polite"></p>
 
-    <!-- CONTATO -->
-    <section id="contatos" class="contatos">
-        <div class="section-header">
-            <span class="section-tag">// VAMOS CONVERSAR?</span>
-            <h2 class="secao-titulo">Entre em Contato</h2>
-            <p class="secao-subtitulo">Disponível para conexões, projetos de IA e oportunidades como Desenvolvedor de IA / AI Engineer</p>
-        </div>
-
-        <div class="contato-wrapper">
-            <form class="formulario-contato" id="formulario">
-                <div class="grupo-form">
-                    <label for="nome" class="label-form">Seu Nome ou Empresa</label>
-                    <input placeholder="Ex: Maria Silva (Tech Recruiter)" class="campo-form" id="nome" required>
-                </div>
-
-                <div class="grupo-form">
-                    <label for="mensagem" class="label-form">Sua Mensagem</label>
-                    <textarea placeholder="Olá Tiago! Vi seu portfólio e suas certificações Google Cloud e gostaria de conversar..." class="campo-form" rows="5" id="mensagem" required></textarea>
-                </div>
-
-                <button type="submit" class="botao-form" id="btnWhats">
-                    💬 Enviar Mensagem no WhatsApp
-                </button>
-            </form>
-        </div>
-    </section>
+                    <button type="submit" class="botao-form" data-i18n="contact.submit">
+                        💬 Enviar Mensagem no WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
-        <p>© 2026 <strong>Tiago Freitas dos Santos Tavares</strong> — Desenvolvedor de IA | Google Cloud Certified Generative AI Leader</p>
+        <p data-i18n-html="footer">© 2026 <strong>Tiago Freitas dos Santos Tavares</strong> — Desenvolvedor de IA | Google Cloud Certified Generative AI Leader</p>
     </footer>
 
     <!-- MODAL DO CERTIFICADO OFICIAL GOOGLE CLOUD -->
-    <div class="cert-modal-overlay" id="certModal" aria-hidden="true">
+    <div class="cert-modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" aria-hidden="true">
         <div class="cert-modal-box">
             <div class="cert-modal-header">
-                <h4>Google Cloud Certified — Generative AI Leader (Credential ID: af92810bd7154c9791ea31c3681d51f7)</h4>
-                <button type="button" class="cert-modal-close" id="btnCloseCertModal" aria-label="Fechar modal">&times;</button>
+                <h4 id="certModalTitle">
+                    <span class="cert-modal-name">Google Cloud Certified — Generative AI Leader</span>
+                    <span class="cert-modal-id">Credential ID: af92810bd7154c9791ea31c3681d51f7</span>
+                </h4>
+                <a class="cert-modal-verify" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="certs.verifyCredly">✔ Verificar no Credly ↗</a>
+                <button type="button" class="cert-modal-close" data-modal-close aria-label="Fechar modal" data-i18n-attr="aria-label:certs.modalClose">&times;</button>
             </div>
             <div class="cert-modal-body">
-                <img src="img/certificado-oficial-google.png" alt="Diploma Oficial Google Cloud Generative AI Leader - Tiago Tavares" class="cert-modal-img">
+                <!-- Conteúdo preenchido pelo CertificateViewer conforme o botão clicado. -->
+                <img src="img/certificado-oficial-google.png" width="1052" height="814" loading="lazy" alt="Diploma Oficial Google Cloud Generative AI Leader - Tiago Tavares" class="cert-modal-img">
             </div>
         </div>
     </div>
 
-    <script src="js/script.js" defer></script>
 </body>
 
 </html>

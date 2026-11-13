@@ -1,0 +1,173 @@
+{
+    "meta": {
+        "title": "Tiago Tavares | Desenvolvedor de IA & AI Engineer — Google Cloud Certified",
+        "description": "Portfólio de Tiago Freitas dos Santos Tavares — Desenvolvedor de IA | AI Engineer certificado pelo Google Cloud (Generative AI Leader & Gemini Enterprise Specialist). Especialista em Python, Google ADK, Agent Platform, MCP, RAG e GCP."
+    },
+    "nav": {
+        "home": "Início",
+        "about": "Sobre",
+        "certs": "Certificações",
+        "career": "Carreira",
+        "stack": "Stack",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "openMenu": "Abrir menu",
+        "closeMenu": "Fechar menu",
+        "switchLanguage": "Idioma: português. Mudar para inglês"
+    },
+    "hero": {
+        "photoAlt": "Foto de Tiago Tavares",
+        "sealTitle": "Google Cloud Certified — Generative AI Leader",
+        "sealAlt": "Selo Google Cloud Generative AI Leader",
+        "rolePrefix": "Desenvolvedor de IA //",
+        "phrases": [
+            "Agentes Autônomos com Google ADK & Gemini Enterprise",
+            "Google Cloud Certified: Generative AI Leader",
+            "Servidores MCP, RAG & Integração BigQuery",
+            "Python • TypeScript • Google Cloud Agent Platform"
+        ],
+        "bio": "Arquitetando e orquestrando agentes de Inteligência Artificial em <strong>Python</strong> no <strong>Google Cloud Platform</strong> (ADK, Agent Platform, Gemini Enterprise, servidores <strong>MCP</strong>, <strong>RAG</strong> e <strong>BigQuery</strong>).",
+        "ctaProjects": "Explorar Projetos",
+        "ctaCvPt": "📄 Currículo (PT-BR)",
+        "ctaCvEn": "🌐 Resume (EN)"
+    },
+    "about": {
+        "tag": "// PERFIL & TRAJETÓRIA",
+        "title": "Sobre Mim",
+        "subtitle": "Desenvolvedor de IA & Arquitetura de Agentes no Google Cloud",
+        "p1": "Sou <strong>Desenvolvedor de IA</strong> na <strong>Gentrop</strong> e graduando em Sistemas de Informação pela UNISANTA, certificado oficialmente pelo Google Cloud como <strong>Generative AI Leader</strong> e <strong>Partner Specialist em Gemini Enterprise (Agent Development &amp; Deployment)</strong>.",
+        "p2": "No meu dia a dia, projeto e desenvolvo sistemas multi-agentes em <strong>Python</strong> utilizando <strong>Google ADK (Agent Development Kit)</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>. Construo servidores <strong>MCP (Model Context Protocol)</strong> customizados, fluxos de <strong>RAG</strong>, integrações com <strong>APIs REST e SQL (BigQuery)</strong>, além de deploys serverless no GCP (<strong>Cloud Run, Cloud Scheduler, Secret Manager</strong>) e interfaces web com <strong>TypeScript, HTML e CSS</strong>.",
+        "metric1": "Credenciais Google Cloud & Gemini",
+        "metric2": "Orquestração de Agentes em Produção",
+        "metric3": "Inglês Avançado & Vivência Bilíngue"
+    },
+    "certs": {
+        "tag": "// CREDENCIAIS OFICIAIS VERIFICADAS",
+        "title": "Certificações Google Cloud",
+        "subtitle": "Reconhecimento oficial em IA Generativa, Arquitetura de Agentes e Implantação Corporativa",
+        "validity": "Válido: Nov 2026 – Nov 2029",
+        "leaderDesc": "Certificação oficial do Google Cloud que comprova domínio em soluções de Inteligência Artificial Generativa, modelos fundacionais Gemini, arquitetura de agentes corporativos, RAG, governança e transformação de processos de negócios no GCP.",
+        "viewDiploma": "🔍 Visualizar Diploma Oficial",
+        "agentDevDesc": "Especialização técnica oficial no desenvolvimento e orquestração de agentes corporativos com Google ADK, Agent Platform e Gemini Enterprise.",
+        "deploymentDesc": "Especialização técnica na implantação, governança, integração segura e escalabilidade de soluções Gemini Enterprise em produção no Google Cloud.",
+        "viewCertificate": "🔍 Visualizar Certificado",
+        "verifyCredly": "✔ Verificar no Credly ↗",
+        "agentDevValidity": "Válido: Out 2026 – Abr 2027",
+        "deploymentValidity": "Válido: Out 2026 – Abr 2027",
+        "modalClose": "Fechar modal",
+        "diplomaAlt": "Diploma Oficial Google Cloud Generative AI Leader - Tiago Tavares",
+        "agentDevAlt": "Certificado Gemini Enterprise Agent Development - Tiago Tavares",
+        "deploymentAlt": "Certificado Gemini Enterprise Deployment - Tiago Tavares"
+    },
+    "exp": {
+        "tag": "// TRAJETÓRIA & IMPACTO",
+        "title": "Experiência Profissional",
+        "subtitle": "Cada etapa com sua identidade e evolução técnica",
+        "gentrop": {
+            "period": "04/2025 – Atual",
+            "role1": "Desenvolvedor de IA (AI Developer)",
+            "role1Time": "04/2026 – Atual",
+            "role1Item1": "Arquitetura e orquestração de agentes autônomos em <strong>Python</strong> com <strong>Google ADK</strong>, <strong>Google Cloud Agent Platform</strong> e <strong>Gemini Enterprise (Agentspace)</strong>.",
+            "role1Item2": "Construção de servidores <strong>MCP (Model Context Protocol)</strong>, fluxos de <strong>RAG</strong> e integração com <strong>APIs REST e SQL / BigQuery</strong>.",
+            "role1Item3": "Deploy serverless em <strong>Cloud Run, Cloud Scheduler e Secret Manager</strong> + interfaces web em <strong>TypeScript, HTML e CSS</strong>.",
+            "role2": "Estagiário em Desenvolvimento de IA",
+            "role2Time": "04/2025 – 04/2026 (Efetivado)",
+            "role2Desc": "Desenvolvimento dos primeiros agentes de IA em Python no GCP, automação de processos críticos entre plataformas via APIs REST e criação de interfaces personalizadas."
+        },
+        "maple": {
+            "badge": "🍁 Imersão Bilíngue (Inglês)",
+            "role": "Estagiário de Tecnologia Educacional (Robótica & Programação)",
+            "desc": "Ministração de aulas práticas de Programação, Robótica e LEGO Education para diferentes faixas etárias. Atuação diária em <strong>ambiente 100% bilíngue com comunicação em inglês</strong> com alunos e equipe pedagógica, desenvolvendo pensamento computacional e resolução colaborativa de problemas.",
+            "tag1": "Inglês Bilíngue",
+            "tag2": "Robótica",
+            "tag3": "Pensamento Computacional"
+        },
+        "logic": {
+            "badge": "🧩 Lógica & Robótica",
+            "role": "Estagiário de Robótica e Programação",
+            "desc": "Criação e estruturação de materiais didáticos técnicos e projetos práticos para cursos de lógica de programação e robótica. Suporte em sala de aula para diferentes níveis de ensino, consolidando forte capacidade de comunicação técnica e didática.",
+            "tag1": "Lógica de Programação",
+            "tag2": "Material Técnico",
+            "tag3": "Mentoria"
+        }
+    },
+    "skills": {
+        "tag": "// ECOSSISTEMA TÉCNICO",
+        "title": "Stack & Habilidades",
+        "python": "Core IA",
+        "adk": "Multi-Agentes",
+        "gcp": "Agent Platform",
+        "sql": "Dados & RAG",
+        "js": "Web & Front",
+        "html": "Interfaces",
+        "css": "Estilização",
+        "git": "Versionamento",
+        "chipPrompt": "🎯 Engenharia de Prompt",
+        "chipMcp": "🔌 Servidores MCP (Model Context Protocol)",
+        "chipSecrets": "🔐 Secret Manager & APIs REST",
+        "chipRag": "📚 RAG (Retrieval-Augmented Generation)"
+    },
+    "projects": {
+        "tag": "// LABORATÓRIO CRIATIVO & ENGENHARIA",
+        "title": "Meus Projetos",
+        "subtitle": "Passe o mouse ou interaja com cada card — cada projeto tem seu próprio universo visual",
+        "poke": {
+            "desc": "Aplicação em <strong>Python</strong> que conecta o clima real de qualquer cidade (via <strong>OpenWeather API</strong>) ao ecossistema Pokémon (<strong>PokeAPI</strong>). Armazena treinadores e seus Pokémons em banco <strong>SQLite</strong> local utilizando ORM <strong>SQLAlchemy</strong> e boas práticas com <code>python-dotenv</code>.",
+            "cta": "🔴 Acessar Pokédex no GitHub ↗"
+        },
+        "gameboy": {
+            "dialogue": "> AI POKÉDEX READY! PRESSIONE A OU B...",
+            "desc": "Uma Pokédex interativa dentro de um <strong>Game Boy clássico</strong>! Converse em linguagem natural com um <strong>Agente de IA</strong> para descobrir estatísticas, fraquezas, lore e estratégias dos seus Pokémon favoritos através de uma interface retrô nostálgica e funcional.",
+            "buttonA": "Testar botão A",
+            "buttonB": "Testar botão B",
+            "cta": "👾 START • Ver Código no GitHub ↗",
+            "linesA": [
+                "> PIKACHU #025: ELÉTRICO | VELOCIDADE: 90 ⚡",
+                "> CHARIZARD #006: FOGO/VOADOR | SP.ATK: 109 🔥",
+                "> GENGAR #094: FANTASMA | AGENTE IA ATIVO! 👻",
+                "> LUCARIO #448: LUTADOR/AÇO | AURA DETECTADA 💠"
+            ],
+            "linesB": [
+                "> [AGENTE IA]: QUAL POKÉMON DESEJA ANALISAR HOJE?",
+                "> [SISTEMA]: CONECTADO AO MODELO GEMINI + POKEAPI!",
+                "> [DICA]: CLIQUE EM 'START' PARA VER O REPOSITÓRIO!"
+            ]
+        },
+        "spotify": {
+            "desc": "Aplicação web interativa integrada à <strong>Spotify Web API</strong> para exploração de artistas, faixas, playlists e métricas musicais em tempo real, aplicando autenticação segura, consumo assíncrono de APIs REST e design escuro inspirado no player oficial.",
+            "cta": "🎧 Ouvir Código no GitHub ↗",
+            "play": "Tocar animação",
+            "pause": "Pausar animação"
+        },
+        "adk": {
+            "badge": "✦ PROJETOS CORPORATIVOS & IA",
+            "status": "GCP • EM PRODUÇÃO",
+            "title": "Projetos Já Realizados",
+            "tag1": "Agentes BigQuery (Text-to-SQL)",
+            "tag2": "Servidores MCP",
+            "tag3": "Automação RH & CX",
+            "desc": "Soluções reais desenvolvidas em <strong>Python</strong> e <strong>Google Cloud</strong>: agentes de análise de dados e <strong>Text-to-SQL no BigQuery</strong>, servidores <strong>MCP (Model Context Protocol)</strong> para integração com plataformas corporativas, automação inteligente de processos de RH e atendimento (CX) e interfaces personalizadas em <strong>TypeScript</strong>.",
+            "cta": "🚀 Conversar sobre Soluções em IA"
+        }
+    },
+    "contact": {
+        "tag": "// VAMOS CONVERSAR?",
+        "title": "Entre em Contato",
+        "subtitle": "Disponível para conexões, projetos de IA e oportunidades como Desenvolvedor de IA / AI Engineer",
+        "nameLabel": "Seu Nome ou Empresa",
+        "namePlaceholder": "Ex: Maria Silva (Tech Recruiter)",
+        "messageLabel": "Sua Mensagem",
+        "messagePlaceholder": "Olá Tiago! Vi seu portfólio e suas certificações Google Cloud e gostaria de conversar...",
+        "submit": "💬 Enviar Mensagem no WhatsApp",
+        "whatsappTemplate": "Olá Tiago! Me chamo {name}. {message}",
+        "success": "Abrindo o WhatsApp…",
+        "errors": {
+            "nameRequired": "Informe seu nome ou empresa.",
+            "nameTooLong": "O nome deve ter no máximo 80 caracteres.",
+            "messageRequired": "Escreva uma mensagem.",
+            "messageTooLong": "A mensagem deve ter no máximo 1000 caracteres.",
+            "unavailable": "Contato indisponível no momento. Tente pelo LinkedIn ou e-mail."
+        }
+    },
+    "footer": "© 2026 <strong>Tiago Freitas dos Santos Tavares</strong> — Desenvolvedor de IA | Google Cloud Certified Generative AI Leader"
+}

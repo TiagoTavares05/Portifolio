@@ -1,0 +1,8 @@
+# Arquivos de desenvolvimento que não precisam ir para o site publicado.
+# O site é estático: a Vercel só precisa de index.html, css/, js/, img/, data/ e cv/.
+scripts/
+tests/
+certified/
+node_modules/
+package.json
+package-lock.json

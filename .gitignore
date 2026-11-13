@@ -1,1 +1,33 @@
-.vscode
+# Dependências (recriadas com `npm install`)
+node_modules/
+
+# Variáveis de ambiente e credenciais — nunca versionar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+service-account*.json
+
+# Vercel (configuração local do CLI)
+.vercel/
+
+# Editores / IDEs
+.vscode/
+.idea/
+.claude/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e relatórios
+*.log
+npm-debug.log*
+coverage/
+
+# PDFs originais dos certificados (o site usa as imagens em img/)
+certified/
